@@ -39,7 +39,9 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 TextField("Enter Title", text: $title)
+                    .textFieldStyle(.roundedBorder)
             }
+            .padding()
             .navigationTitle("All Tasks")
         }
     }
